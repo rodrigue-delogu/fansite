@@ -1,0 +1,295 @@
+/*---------------------------        Début des Polices        ---------------------------*/
+@font-face {
+	font-family: "shlop";
+	src: url('police/shlop.ttf');
+}
+@font-face {
+	font-family: "nightmare";
+	src: url('police/nightmare.ttf');
+}
+@font-face {
+	font-family: "blood";
+	src: url('police/blood.ttf');
+}
+/*---------------------------        Fin des Polices        ---------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+/*---------------------------        Début du Header         ---------------------------*/
+#en-têteH{
+    background: url("./image/headerH.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 1em;
+    color: orangered;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    text-shadow: 11px 9px 11px rgba(0,0,0,0.89);
+}
+#titreH{
+    font-size: 50px;
+    font-family: 'shlop';
+    letter-spacing: 2px;
+}
+
+/*---------------------------        Début menu déroulant         ---------------------------*/
+.menu{
+  display: flex;
+  width: 100%
+}
+.menu > li {
+  color: orangered;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  font-size: 30px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  text-align: center;
+  font-family: 'shlop';
+  letter-spacing: 2px;
+  font-style: italic;
+  margin-right: -35px;
+}
+.sub-menu {
+  transform: scale(0);
+  transform-origin: top center;
+  transition: all 300ms ease-in-out;
+  z-index: 15;
+}
+.sub-menu li {
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: orangered;
+  border-bottom: 5px solid rgb(0, 0, 0);
+  transition: all 300ms ease-in-out;
+  text-shadow: 11px 9px 11px rgba(0,0,0,0.89)
+}
+.sub-menu li:hover {
+  background: rgba(0, 0, 0, 0.696);
+}
+.menu > li:hover .sub-menu {
+  transform: scale(1);
+}
+.TextDeco{
+    text-decoration: none;
+    color: orangered;
+}
+/*---------------------------        Fin du menu déroulant     ---------------------------*/
+/*---------------------------         Fin du Header          ---------------------------*/
+
+/*---------------------------Début du marquis (de Sade LOL^^^^^)---------------------------*/
+.bandeau {
+    position: absolute;
+    font-size: 2.3vw;
+    width: 100%;
+    overflow: hidden;
+    top: 12%;
+    transform: rotateZ(-1deg);
+    background: rgb(239, 216, 6);
+    color: rgb(0, 0, 0);
+}
+
+.textbandeau {
+    white-space: nowrap;
+    animation: 50s 0s infinite normal none running Anim;
+}
+
+@keyframes Anim{
+  0% {
+      transform: translate(-100%);
+  }
+
+  50% {
+      transform: translate(0%);
+  }
+
+  100% {
+      transform: translate(-100%);
+  }
+}
+/*---------------------------Fin du marquis--------------------------*/
+
+/*---------------------------Début du main---------------------------*/
+/*---------------------------Début du titre--------------------------*/
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url(./image/wall.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-position-y: 1000px;
+
+}
+#fondtitre{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+}
+#textcorps{
+    display: flex;
+    width: 100%;
+}
+#titrecorps{
+    font-family: 'nightmare';
+    height: 200px;
+    line-height: 280px;
+    font-size: 100px;
+    color: rgb(107, 8, 8);
+    width: 100%;
+    text-align: center;
+    text-shadow: 11px 9px 11px rgba(0,0,0,0.89);
+}
+#YTsub{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 660px;
+}
+#originh{
+    width: 800px;
+    height: 500px;
+}
+/*---------------------------Fin du fondtitre---------------------------*/
+
+
+
+
+/*---------------------------Fin du main---------------------------*/
+
+/*---------------------------Début du footer---------------------------*/
+#footerBB{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    background: url(./image/footerbg.jpg);
+    background-size: 100%;
+    background-position: 40% 70%;
+    justify-content: space-between;
+}
+
+#contact{
+    padding-top: 1%;
+    margin-left: 3%;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    background-color: rgba(0, 0, 255, 0);
+}
+#social{
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    text-align: left;
+    color: black;
+    text-shadow: 4px 2px 15px rgba(0,0,0,0.59);
+}
+#rézo{
+    display: flex;
+}
+#twitterjpg{
+    display: flex;
+    height: 90px;
+}
+#textwit{
+    background-color: rgba(165, 42, 42, 0);
+    align-items: center;
+    display: flex;
+    color: black;
+    text-shadow: 4px 2px 15px rgba(0,0,0,0.59);
+}
+#social i{
+    font-family: "blood";
+    color: red;
+    letter-spacing: 4px;
+    font-size: 17px;
+    text-shadow: 4px 2px 15px rgba(0,0,0,0.59);
+}
+#SayHello{
+    display: flex;
+    width: 17%;
+    flex-direction: column;
+    margin-right: 4%;
+    margin-top: 1%;
+}
+#lieu{
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    background-color: rgba(241, 228, 228, 0);
+    font-weight: 700;
+    text-shadow: 4px 2px 15px rgba(0,0,0,0.59);
+}
+#blood{
+    color: red;
+    font-family: blood;
+    letter-spacing: 4px;
+    font-size: 17px;
+    font-style: italic;
+    text-shadow: 4px 2px 15px rgba(0,0,0,0.59);
+}
+#MAPS{
+    width: 100%;
+    box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.8);
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+/*---------------------------Fin du footer---------------------------*/
+
+/*---------------------------Page actualité--------------------------*/
+.parallax {
+    background-image: url("image/actu.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.article{
+    display: flex;
+    color: rgb(235, 235, 235); 
+    font-weight: 700;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+  
+.article1{
+    display: flex;
+    color: rgb(235, 235, 235); 
+    background-color: rgba(0, 0, 0, 0.349);
+    font-weight: 700;
+    width: 30%;
+    flex-direction: column;
+}
+.articletwo{
+    display: flex;
+    color: rgb(235, 235, 235); 
+    font-weight: 700;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.article2{
+    display: flex;
+    color: rgb(235, 235, 235); 
+    background-color: rgba(0, 0, 0, 0.349);
+    font-weight: 700;
+    width: 30%;
+    flex-direction: column;
+}
